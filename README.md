@@ -1,2 +1,3 @@
-# MLOps-2025
-Entire pipeline of building a ML project 
+# PDF Data Pipeline
+
+This repository contains a pipeline for processing unstructured PDFs.
