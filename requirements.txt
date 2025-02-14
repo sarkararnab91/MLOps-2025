@@ -1,6 +1,7 @@
 boto3
 pytest
 pgvector
-dvc[aws]
 black
+dvc_s3
 flake8
+python-dotenv
