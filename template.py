@@ -9,6 +9,7 @@ PROJECT_STRUCTURE = {
         ".github/workflows",
         "terraform",
         "logs",
+        'data'
     ],
     "src": [
         "dvc_tracking.py",
@@ -81,8 +82,10 @@ def create_project_structure():
                 os.makedirs(path, exist_ok=True)
 
     for filename, content in TEMPLATE_FILES.items():
-        with open(filename, "w") as f:
-            f.write(content)
+        #if file already exist then don't overwrite
+        if not os.path.exists(filename):
+            with open(filename, "w") as f:
+                f.write(content)
 
     print("✅ Project structure created successfully!")
 
