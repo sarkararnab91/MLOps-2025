@@ -1,0 +1,6 @@
+boto3
+pytest
+pgvector
+dvc[aws]
+black
+flake8
