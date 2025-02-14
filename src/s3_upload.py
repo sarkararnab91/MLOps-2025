@@ -34,7 +34,7 @@ def upload_to_s3():
             
             logging.info(f"Uploading {file_path} to S3 as {s3_key}...")
             
-            try:
+            try: #trying randmomly
                 s3_client.upload_file(file_path, S3_BUCKET, s3_key)
                 logging.info(f"Successfully uploaded {file_path} to s3://{S3_BUCKET}/{s3_key}")
             except Exception as e:
